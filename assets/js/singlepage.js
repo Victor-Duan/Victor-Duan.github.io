@@ -2,7 +2,7 @@
 
     // create the module and name it websiteApp
         // also include ngRoute for all our routing needs
-    var websiteApp = angular.module('mainSite', ['ngRoute']);
+    var websiteApp = angular.module('websiteApp', ['ngRoute']);
 
     // configure our routes
     websiteApp.config(function($routeProvider) {
