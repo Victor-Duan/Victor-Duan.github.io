@@ -2567,7 +2567,7 @@
 	
 /* self insert css */
 
-.gamesList2016Container {
+#gamesList2016Container {
 	position: relative;
 	/* padding-bottom: 65.25%; */
 	/* padding-top: 30px; */
@@ -2576,7 +2576,7 @@
 	-webkit-overflow-scrolling: touch;
 	/* border: solid black 1px; */
 } 
-.myIframe iframe {
+#gamesList2016Container iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
