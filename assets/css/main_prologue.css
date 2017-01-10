@@ -2022,6 +2022,12 @@
 			font-size: 0.8em;
 			text-align: center;
 		}
+		
+		#header .copyright {
+			font-size: 0.8em;
+			text-align: center;
+			color:#888;
+		}
 
 			#header .icons a {
 				color: #41484c;
