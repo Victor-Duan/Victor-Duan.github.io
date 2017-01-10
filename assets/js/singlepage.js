@@ -22,7 +22,7 @@
 
             // route for the contact page
             .when('/playedGames2016', {
-                templateUrl : 'gamesListContainer.html',
+                templateUrl : 'gamesList2016Container.html',
                 controller  : 'playedGames2016Controller'
             });
     });
