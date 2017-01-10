@@ -2147,7 +2147,6 @@
 
 	#main {
 		margin-left: 375px;
-		height:100%;
 	}
 
 		#main > section {
@@ -2330,7 +2329,6 @@
 
 			html, body {
 				overflow-x: hidden;
-				height:100%;
 			}
 
 			body, input, textarea, select {
