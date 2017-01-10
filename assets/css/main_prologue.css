@@ -2571,8 +2571,8 @@
 	position: relative;
 	padding-bottom: 65.25%;
 	/* padding-top: 30px; */
-	height: 0px;
-	overflow: auto; 
+	height: 0;
+	overflow: hidden; 
 	-webkit-overflow-scrolling: touch;
 	/* border: solid black 1px; */
 } 
