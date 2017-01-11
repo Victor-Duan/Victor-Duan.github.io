@@ -9,7 +9,7 @@
         $routeProvider
 
             //route for the home page
-            .when('/, {
+            .when('/intro', {
                 templateUrl : 'home.html',
                 controller  : 'mainController'
             })
@@ -24,6 +24,10 @@
             .when('/playedGames2016', {
                 templateUrl : 'gamesList2016Container.html',
                 controller  : 'playedGames2016Controller'
+            })
+            
+            .otherwise({
+            	redirectTo: '/intro'
             });
     });
 
