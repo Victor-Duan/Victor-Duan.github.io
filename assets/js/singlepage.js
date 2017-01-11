@@ -9,7 +9,7 @@
         $routeProvider
 
             //route for the home page
-            .when('/intro', {
+            .when('/, {
                 templateUrl : 'home.html',
                 controller  : 'mainController'
             })
