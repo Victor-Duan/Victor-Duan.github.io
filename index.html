@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html style="height:100%;">
 	<head>
 		<title>Victor Duan's Site</title>
 		<meta charset="utf-8" />
@@ -14,7 +14,7 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
-	<body>
+	<body style="height:100%" ng-app="singlePageApp">
 
 		<!-- Header -->
 			<div id="header">
@@ -44,13 +44,13 @@
 
 							-->
 							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="resume.pdf" id="resume-link" class="skel-layers-ignoreHref"><span class="icon fa-file">Resume</span></a></li>
+								<li><a href="#/top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#/resume" id="resume-link" class="skel-layers-ignoreHref"><span class="icon fa-file">Resume</span></a></li>
 <!-- 
 								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
 								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
  -->
-								<li><a href="gamesList2016.html" id="games2016-link"><span class="icon fa-gamepad">Played Games of 2016</span></a></li>
+								<li><a href="#/gamesList2016" id="gamesList2016-link"><span class="icon fa-gamepad">Played Games of 2016</span></a></li>
 							</ul>
 						</nav>
 
@@ -72,16 +72,17 @@
 			</div>
 
 		<!-- Main -->
-			<div id="main">
-
+			<div style="height:100%;" id="main">
+				<div id="content-container" style="height:100%;" ng-view></div>
 				<!-- Intro -->
+<!-- 
 					<section id="top" class="one dark cover">
 						<div class="container">
 
 							<header>
 								<h2 class="alt">Hi! I'm <strong>Victor Duan</strong>, a Software Engineering student<br />
 								at the University of Waterloo</h2>
-								<!-- <p>Click a link in the sidebar!</p> -->
+								<!~~ <p>Click a link in the sidebar!</p> ~~>
 							</header>
 
 							<footer>
@@ -90,6 +91,16 @@
 
 						</div>
 					</section>
+ -->
+					
+				<!-- Resume -->
+<!-- 
+					<section id="resume" class="two">
+						<div class="resume-container">
+
+						</div>
+					</section>
+ -->
 <!-- 
 
 				<!~~ Portfolio ~~>
@@ -189,11 +200,14 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-<!-- 			<script src="assets/js/jquery.scrolly.min.js"></script> -->
-<!-- 			<script src="assets/js/jquery.scrollzer.min.js"></script> -->
+			<script src="assets/js/jquery.scrolly.min.js"></script>			<script src="assets/js/jquery.scrollzer.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main_prologue.js"></script>
+
+      		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+          	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      		<script src="assets/js/singlepage.js"></script>
 	</body>
 </html>

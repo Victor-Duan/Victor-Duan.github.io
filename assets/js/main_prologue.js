@@ -138,10 +138,11 @@
 
 					});
 					
-		//Initialize the first item in the nav list to be highlighted
-		//TODO: make nav active based on the current page
-		$("#nav a:first").addClass('active');
-
+		//Initialize the nav section for the page indicated in the url to be highlighted
+		//will let direct link accesses still have nav bar highlighted
+		var curPageId = window.location.href.substring(window.location.href.lastIndexOf("/") + 1) + "-link";
+		//console.log(curPageId);
+		$("#" + curPageId).addClass('active');
 	});
 
 })(jQuery);
