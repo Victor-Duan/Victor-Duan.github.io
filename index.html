@@ -64,7 +64,7 @@
 							<li><a href="https://github.com/victor-duan" class="icon fa-github"><span class="label">Github</span></a></li>
 							<li><a href="mailto:vduan@uwaterloo.ca" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
-						<ul class="copyright">
+						<ul class="copyright" style="font-size:0.6em">
 							<li>&copy; Victor Duan. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 				</div>
@@ -209,5 +209,12 @@
       		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
           	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
       		<script src="assets/js/singlepage.js"></script>
-	</body>
+      		
+<!--       		TODO: make this more elegant -->
+      		<script>
+      			$(document).ready(function() {
+      				$("#top-link").click();
+      			});
+      		</script>
+	</body>	
 </html>
