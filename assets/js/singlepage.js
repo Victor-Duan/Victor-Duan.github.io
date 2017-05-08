@@ -19,7 +19,7 @@
             })
 
             // route for the contact page
-            .when('/gamesList2016', {
-                templateUrl : 'gamesList2016Container.html',
+            .when('/gamesList', {
+                templateUrl : 'gamesListContainer.html',
             });
     });
