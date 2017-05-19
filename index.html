@@ -213,7 +213,9 @@
 <!--       		TODO: make this more elegant -->
       		<script>
       			$(document).ready(function() {
-      				$("#top-link").click();
+      				if (window.location.pathname === "/") {
+      					$("#top-link").click();
+      				}
       			});
       		</script>
 	</body>	
